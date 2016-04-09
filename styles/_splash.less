@@ -1,0 +1,37 @@
+/*** SPLASH IMAGE ***/
+.splash-image {
+  position: relative;
+  height: @splash-image-height;
+  margin-top: @navigation-height;
+  width: 100%;
+  background: #111;
+
+  .background {
+    background: url(../images/splash.jpg) no-repeat;
+    background-size: cover;
+    height: @splash-image-height;
+    width: 100%;
+
+    .blurb {
+      position: relative;
+      top: 25px;
+      opacity: 1;
+      height: @splash-image-height - 50px;
+      width: 230px;
+      padding: 20px;
+      background: fadeout(#000, 40);
+
+      h2 {
+        color: #fff;
+        text-align: left;
+      }
+
+      .telephone {
+        position: absolute;
+        bottom: 20px;
+        color: @accent-color;
+        font-size: 20px;
+      }
+    }
+  }
+}

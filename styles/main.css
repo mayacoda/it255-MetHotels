@@ -1,0 +1,226 @@
+.color-transition {
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s;
+}
+.background-transition {
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -ms-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+/*** BASE ***/
+body {
+  font-family: 'Asap', sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  color: #434343;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+.unstyled-list,
+.navigation .dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 40px;
+  color: #333;
+}
+h2 {
+  color: #656464;
+}
+hr {
+  display: block;
+  width: 70%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #656464;
+  margin: 1em auto;
+  padding: 0;
+}
+/*** ASIDE ***/
+aside {
+  text-align: center;
+  line-height: 2em;
+}
+/*** NAVIGATION ***/
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 48px;
+  top: 0;
+  background-color: #333;
+  z-index: 2;
+}
+.navigation .actions {
+  float: right;
+}
+.navigation .menu-item {
+  display: inline-block;
+  position: relative;
+}
+.navigation .menu-item a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.navigation .menu-item a:hover {
+  background-color: #555;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
+  -ms-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+.navigation .menu-item form {
+  margin: 0;
+}
+.navigation .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  width: 200px;
+}
+.navigation .search input {
+  background: #333;
+  border: 1px solid #999;
+  padding: 5px 12px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 13px;
+}
+.navigation .search input:focus {
+  border: 1px solid #eee;
+}
+.navigation .search button {
+  background: #333;
+  color: #fff;
+  border: 1px solid #999;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px;
+  margin-left: -5px;
+}
+/*** SPLASH IMAGE ***/
+.splash-image {
+  position: relative;
+  height: 400px;
+  margin-top: 48px;
+  width: 100%;
+  background: #111;
+}
+.splash-image .background {
+  background: url(../images/splash.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+.splash-image .background .blurb {
+  position: relative;
+  top: 25px;
+  opacity: 1;
+  height: 350px;
+  width: 230px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.splash-image .background .blurb h2 {
+  color: #fff;
+  text-align: left;
+}
+.splash-image .background .blurb .telephone {
+  position: absolute;
+  bottom: 20px;
+  color: #f89702;
+  font-size: 20px;
+}
+/*** FEATURES ***/
+.features {
+  background: #fff;
+  overflow: hidden;
+}
+.features h3 {
+  color: #434343;
+}
+.features h3.feature-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.features h3.feature-title a {
+  text-decoration: none;
+  color: #434343;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s;
+}
+.features h3.feature-title a:hover {
+  color: #f8271d;
+}
+.features .col-3 {
+  margin: 30px 0;
+  float: left;
+  width: 33%;
+}
+.features section {
+  color: #434343;
+  font-size: 14px;
+  padding: 25px 10px 35px 70px;
+  position: relative;
+}
+.features .feature-image {
+  position: absolute;
+  left: 0;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+}
+/*** FOOTER ***/
+footer {
+  padding: 30px 0;
+  margin-top: 50px;
+  background-color: #434343;
+}
+footer ul.footer-list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 28px;
+}
+footer ul.footer-list a {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s;
+}
+footer ul.footer-list a:hover {
+  color: #f8271d;
+}
+footer ul.footer-list .list-title {
+  color: #f89702;
+  text-transform: uppercase;
+}
